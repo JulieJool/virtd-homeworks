@@ -31,7 +31,8 @@ Hey, Netology
 ---
 ### Решение ###
 
-https://hub.docker.com/repository/docker/juliejool/custom-nginx/general   
+[My repo with nginx image](https://hub.docker.com/repository/docker/juliejool/custom-nginx/general)   
+
 ---  
 
 ## Задача 2
