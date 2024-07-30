@@ -57,15 +57,27 @@ Hey, Netology
 1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
 2. Подключитесь к контейнеру и нажмите комбинацию Ctrl-C.
 3. Выполните ```docker ps -a``` и объясните своими словами почему контейнер остановился.
+   ![3.1-3](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.1-3.jpg)    
 4. Перезапустите контейнер
 5. Зайдите в интерактивный терминал контейнера "custom-nginx-t2" с оболочкой bash.
+ ![3.4-5](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.4-5.jpg)    
 6. Установите любимый текстовый редактор(vim, nano итд) с помощью apt-get.
+ ![3.6](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.6.jpg)    
 7. Отредактируйте файл "/etc/nginx/conf.d/default.conf", заменив порт "listen 80" на "listen 81".
+ ![3.7](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.7.jpg)    
 8. Запомните(!) и выполните команду ```nginx -s reload```, а затем внутри контейнера ```curl http://127.0.0.1:80 ; curl http://127.0.0.1:81```.
+ ![3.8](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.8.jpg)    
 9. Выйдите из контейнера, набрав в консоли  ```exit``` или Ctrl-D.
 10. Проверьте вывод команд: ```ss -tlpn | grep 127.0.0.1:8080``` , ```docker port custom-nginx-t2```, ```curl http://127.0.0.1:8080```. Кратко объясните суть возникшей проблемы.
+ ![3.9-10](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.9-10.jpg)    
 11. * Это дополнительное, необязательное задание. Попробуйте самостоятельно исправить конфигурацию контейнера, используя доступные источники в интернете. Не изменяйте конфигурацию nginx и не удаляйте контейнер. Останавливать контейнер можно. [пример источника](https://www.baeldung.com/linux/assign-port-docker-container)
+ ![3.11.1](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.11.1.jpg)    
+ ![3.11.2](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.11.2.jpg)    
+ ![3.11.3](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.11.3.jpg)    
+ ![3.11.4](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.11.4.jpg)    
+ ![3.11.5](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.11.5.jpg)    
 12. Удалите запущенный контейнер "custom-nginx-t2", не останавливая его.(воспользуйтесь --help или google)
+ ![3.12](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.12.jpg)    
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
