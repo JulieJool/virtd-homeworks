@@ -40,26 +40,17 @@ Hey, Netology
 - имя контейнера "ФИО-custom-nginx-t2"
 - контейнер работает в фоне
 - контейнер опубликован на порту хост системы 127.0.0.1:8080
-2. Переименуйте контейнер в "custom-nginx-t2"
-3. Выполните команду ```date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html```
-4. Убедитесь с помощью curl или веб браузера, что индекс-страница доступна.
-
-В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
----
-### Решение ###
-
 ![2.1](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/2.1.jpg)    
-
+2. Переименуйте контейнер в "custom-nginx-t2"
 ![2.2](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/2.2.jpg)    
-
+3. Выполните команду ```date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html```
 ![2.3](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/2.3.jpg)    
-
+4. Убедитесь с помощью curl или веб браузера, что индекс-страница доступна.
 ![2.4.1](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/2.4.1.jpg)    
 
 ![2.4.2](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/2.4.2.jpg)    
 
-
----  
+В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
 
 ## Задача 3
