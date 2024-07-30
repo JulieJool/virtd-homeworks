@@ -58,6 +58,7 @@ Hey, Netology
 2. Подключитесь к контейнеру и нажмите комбинацию Ctrl-C.
 3. Выполните ```docker ps -a``` и объясните своими словами почему контейнер остановился.
    ![3.1-3](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.1-3.jpg)    
+Команда attach подключает по сути терминал к запущенному контейнеру, соответсвенно, команды выполненные непосредственно в терминале (не внутри контейнера) будут передоваться контейру. Получается, нажав данную комбинацию клавиш в терминале (не войдя в оболочку самого контейнера), мы передали контейнеру сингал остановиться, что он и сделал.
 4. Перезапустите контейнер
 5. Зайдите в интерактивный терминал контейнера "custom-nginx-t2" с оболочкой bash.
  ![3.4-5](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.4-5.jpg)    
@@ -69,14 +70,15 @@ Hey, Netology
  ![3.8](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.8.jpg)    
 9. Выйдите из контейнера, набрав в консоли  ```exit``` или Ctrl-D.
 10. Проверьте вывод команд: ```ss -tlpn | grep 127.0.0.1:8080``` , ```docker port custom-nginx-t2```, ```curl http://127.0.0.1:8080```. Кратко объясните суть возникшей проблемы.
- ![3.9-10](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.9-10.jpg)    
-11. * Это дополнительное, необязательное задание. Попробуйте самостоятельно исправить конфигурацию контейнера, используя доступные источники в интернете. Не изменяйте конфигурацию nginx и не удаляйте контейнер. Останавливать контейнер можно. [пример источника](https://www.baeldung.com/linux/assign-port-docker-container)
+ ![3.9-10](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.9-10.jpg)
+Изменив конфигурацию, мы завставили контейнер перестать прослушивать свой 80 порт, вместо него теперь прослушивается 81 порт. На хосту попрежнему открыт порт 8080, но так как он все еще связан на данный момент с 80 портом контейнера, ответа от контейнера nginx мы не получаем. Изменим эту ситуацию в следующем пункте, не удаляя и не создавая новый контейнер, изменив лишь конфигурационные файлы.
+12. * Это дополнительное, необязательное задание. Попробуйте самостоятельно исправить конфигурацию контейнера, используя доступные источники в интернете. Не изменяйте конфигурацию nginx и не удаляйте контейнер. Останавливать контейнер можно. [пример источника](https://www.baeldung.com/linux/assign-port-docker-container)
  ![3.11.1](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.11.1.jpg)    
  ![3.11.2](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.11.2.jpg)    
  ![3.11.3](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.11.3.jpg)    
  ![3.11.4](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.11.4.jpg)    
  ![3.11.5](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.11.5.jpg)    
-12. Удалите запущенный контейнер "custom-nginx-t2", не останавливая его.(воспользуйтесь --help или google)
+13. Удалите запущенный контейнер "custom-nginx-t2", не останавливая его.(воспользуйтесь --help или google)
  ![3.12](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/3.12.jpg)    
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
