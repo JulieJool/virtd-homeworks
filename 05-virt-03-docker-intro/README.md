@@ -49,6 +49,7 @@ Hey, Netology
 ![2.4.1](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/2.4.1.jpg)    
 
 ![2.4.2](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/2.4.2.jpg)    
+I will be *a devops engineer, grammatically overpicky :)
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
