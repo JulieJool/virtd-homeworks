@@ -87,10 +87,16 @@ Hey, Netology
 
 
 - Запустите первый контейнер из образа ***centos*** c любым тегом в фоновом режиме, подключив папку  текущий рабочий каталог ```$(pwd)``` на хостовой машине в ```/data``` контейнера, используя ключ -v.
-- Запустите второй контейнер из образа ***debian*** в фоновом режиме, подключив текущий рабочий каталог ```$(pwd)``` в ```/data``` контейнера. 
+ ![4.1](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/4.1.jpg)    
+*используем tail -f /dev/null, чтобы контейнер не завершал свою работу преждевременно.    
+- Запустите второй контейнер из образа ***debian*** в фоновом режиме, подключив текущий рабочий каталог ```$(pwd)``` в ```/data``` контейнера.
+ ![4.2](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/4.2.jpg)    
 - Подключитесь к первому контейнеру с помощью ```docker exec``` и создайте текстовый файл любого содержания в ```/data```.
+ ![4.3](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/4.3.jpg)    
 - Добавьте ещё один файл в текущий каталог ```$(pwd)``` на хостовой машине.
+ ![4.4](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/4.4.jpg)    
 - Подключитесь во второй контейнер и отобразите листинг и содержание файлов в ```/data``` контейнера.
+ ![4.5](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/4.5.jpg)    
 
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
