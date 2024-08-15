@@ -131,7 +131,7 @@ services:
 
 И выполните команду "docker compose up -d". Какой из файлов был запущен и почему? (подсказка: https://docs.docker.com/compose/compose-application-model/#the-compose-file )
  ![5.1](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/5.1.jpg)    
-Оба варианта поддерживаются современной версией docker compose, но если присутсвуют оба варианта в рабочем виде, docker compose в первую очередь предпочтет более новый сокращенный вариант "compose.yaml". 
+Оба варианта поддерживаются современной версией docker compose, но если присутсвуют оба варианта в рабочем виде (т.е. без ошибок и готовые к работе), docker compose в первую очередь предпочтет более новый сокращенный вариант "compose.yaml". 
 
 2. Отредактируйте файл compose.yaml так, чтобы были запущенны оба файла. (подсказка: https://docs.docker.com/compose/compose-file/14-include/)
  ![5.2-1](https://github.com/JulieJool/virtd-homeworks/blob/shvirtd-1/05-virt-03-docker-intro/img/5.2-1.jpg)    
